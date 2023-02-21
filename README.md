@@ -1,11 +1,20 @@
 # some setup stuff
 
+## FIRST STEPS
+
+Update your box
+
+```bash
+$ sudo apt update -y && sudo apt upgrade -y
+```
+
+## USB stuff
 First you need to pass the USB port through to your VM.  For example, in VirtualBox, Kali VM -> Settings -> USB.
 Add new USB filter.
 
 
 
-Check for USB
+### Check for USB
 
 ```bash
 # before connecting adapter
@@ -25,7 +34,7 @@ Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
 ```
 
 
-# install realtek driver
+### install realtek driver
 
 ```
 sudo apt install --reinstall build-essential bc dkms git
@@ -35,7 +44,8 @@ sudo ./install-driver.sh
 sudo modprobe 8821cu
 ```
 
-## install-driver.sh error: Your Kernel header files aren't properly installed.
+## errors
+### install-driver.sh error: Your Kernel header files aren't properly installed.
 
 Possible reason: You may have recently updated your kernel, but the system is still
 using the old kernel's information.
