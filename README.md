@@ -1,3 +1,29 @@
+# pass USB to Kali VM
+
+In VirtualBox, Kali VM -> Settings -> USB
+
+
+Check for USB
+
+```bash
+# before connecting adapter
+
+$ lsusb # 'list usb'
+Bus 001 Device 002: ID 80ee:0021 VirtualBox USB Tablet
+Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+
+
+# after connecting 
+
+$ lsusb
+Bus 001 Device 005: ID 0bda:c811 Realtek Semiconductor Corp. 802.11ac NIC
+Bus 001 Device 002: ID 80ee:0021 VirtualBox USB Tablet
+Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+
+```
+
+
+
 # install realtek driver
 
 ```
