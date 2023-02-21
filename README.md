@@ -73,7 +73,7 @@ February
 
 ## `hashcat`
 
-source: (ippsec)[https://youtube.com/watch?v=80-73OYcrrk&t=3438]
+source: [ippsec](https://youtube.com/watch?v=80-73OYcrrk&t=3438)
 
 ```bash
 $ hashcat --force <wordlist> -r /usr/share/hashcat/rules/best64.rule --stdout > <outfile>
