@@ -1,6 +1,8 @@
-# pass USB to Kali VM
+# some setup stuff
 
-In VirtualBox, Kali VM -> Settings -> USB
+First you need to pass the USB port through to your VM.  For example, in VirtualBox, Kali VM -> Settings -> USB.
+Add new USB filter.
+
 
 
 Check for USB
