@@ -33,8 +33,16 @@ Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
 
 ```
 
+### Atheros AR9271 or AR7010 devices (ath9k_htc)
 
-### install realtek driver
+It's highly likely these adpaters work 'out of the box.'  If that's the case
+for you, you're done.
+
+Otherwise, follow [these instructions](https://wiki.debian.org/ath9k_htc) for installing the drivers on Debian
+systems.
+
+
+### broadcomm/realtek adapters
 
 clone the [github repo](https://github.com/morrownr) which corresponds to the
 chipset of your wifi adapter.
