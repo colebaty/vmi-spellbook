@@ -45,7 +45,7 @@ for example, if the output of `lsusb` is as follows:
 $ lsusb
 Bus 001 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
 Bus 001 Device 002: ID 80ee:0021 VirtualBox USB Tablet
-Bus 001 Device 003: ID 0bda:b812 Realtek Semiconductor Corp. RTL88x2bu [AC1200 Techkey] <== RTL88x2bu
+Bus 001 Device 003: ID 0bda:b812 Realtek Semiconductor Corp. RTL88x2bu [AC1200 Techkey] #<== RTL88x2bu
 
 ```
 
