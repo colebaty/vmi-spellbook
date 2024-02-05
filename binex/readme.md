@@ -8,8 +8,8 @@ that you can go out and learn the music.
 
 we'll be mostly following CryptoCat's tutorials:
 
-- [YouTube playlist](https://github.com/Crypto-Cat/CTF/tree/main/pwn/binary_exploitation_101)
-- [Github Repo](https://www.youtube.com/watch?v=wa3sMSdLyHw&list=PLHUKi1UlEgOIc07Rfk2Jgb5fZbxDPec94&pp=iAQB)
+- [YouTube playlist](https://www.youtube.com/watch?v=wa3sMSdLyHw&list=PLHUKi1UlEgOIc07Rfk2Jgb5fZbxDPec94&pp=iAQB)
+- [Github Repo](https://github.com/Crypto-Cat/CTF/tree/main/pwn/binary_exploitation_101)
 
 
 # getting started
