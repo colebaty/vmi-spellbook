@@ -12,9 +12,26 @@ we'll be mostly following CryptoCat's tutorials:
 - [Github Repo](https://www.youtube.com/watch?v=wa3sMSdLyHw&list=PLHUKi1UlEgOIc07Rfk2Jgb5fZbxDPec94&pp=iAQB)
 
 
+# getting started
+
+first, if you haven't already, install the [requirements](#requirements).
+
+for a rundown of buffer overflow basics, watch [the first cryptocat video from
+the
+playlist](https://www.youtube.com/watch?v=wa3sMSdLyHw&list=PLHUKi1UlEgOIc07Rfk2Jgb5fZbxDPec94).
+the entire video is worth a watch, but the intro to basics begins at timestamp
+2:07.
+
+it's worth working through the first two modules in the linked CryptoCat GitHub
+repo. however, we will primarily focus on [the third
+module](https://github.com/Crypto-Cat/CTF/tree/main/pwn/binary_exploitation_101/02-overwriting_stack_variables_part2)
+
+
 
 # requirements 
 
+- `gcc` - GNU C compiler `sudo apt install build-essential`.  this is a meta
+  package that should contain everything you need
 - python3 
 - GNU Debugger aka `gdb`- should be in apt repositories `sudo apt install gdb`
 - one of the following gdb enhancement suites:
