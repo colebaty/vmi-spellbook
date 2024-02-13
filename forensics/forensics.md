@@ -30,11 +30,11 @@ Generally, CTF forensics challenges break down into three broad categories:
 
 #### add source and destination port columns
 
-![](vmi-spellbook/forensics/img/wireshark-columns-1.png)
+![wireshark-columns-1](wireshark-columns-1.png)
 
-![[vmi-spellbook/forensics/img/wireshark-columns-2.png]]
+![[wireshark-columns-2.png]]
 
-![[vmi-spellbook/forensics/img/wireshark-columsn-3.png]]
+![[wireshark-columsn-3.png]]
 
 ## approach
 
@@ -48,11 +48,11 @@ Depending on what specific info the challenge asks for, you may have to:
 
 ### file carving
 
-![[vmi-spellbook/forensics/img/wireshark-file-exports.png]]
+![[wireshark-file-exports.png]]
 
 Select _File -> Export Objects -> \<protocol\>_.  In this case, HTTP.
 
-![[vmi-spellbook/forensics/img/wireshark-file-carve-w.png]]
+![[wireshark-file-carve-w.png]]
 
 There's one file in this list with a funny-looking name, so it's worth investigating.  Select it (1), and save it (2) for further analysis.  Notice also that you can "save all".  
 
@@ -60,7 +60,7 @@ There's one file in this list with a funny-looking name, so it's worth investiga
 
 #### filtering
 
-![[vmi-spellbook/forensics/img/wireshark-filtering.png]]
+![[wireshark-filtering.png]]
 
 Wireshark has a very powerful filtering engine, but it can take a while to learn how to construct the filtering expressions.  There is some help - in the image above, notice that as I'm typing, there is a contextual menu to help me out.
 
@@ -70,25 +70,25 @@ There are also GUI options that help with filtering.
 
 The _Statistics_ menu is also a good starting place.
 
-![[vmi-spellbook/forensics/img/wireshark-statistics-menu.png]]
+![[wireshark-statistics-menu.png]]
 
 Each of the three outlined menu items lets you quickly analyze the contents of the packet capture.
 
 ##### protocol hierarchy
 
-![[vmi-spellbook/forensics/img/protocol-statistics.png]]
+![[protocol-statistics.png]]
 
 The image above shows the protocol hierarchy statistics for some packet capture file.  Some things this capture reveals are (1) unusual or not-often-seen protocols and (2) protocols with a very small number of packets.  
 
 From this window, we can easily filter just these protocols.
 
-![[vmi-spellbook/forensics/img/wireshark-protocols-filtering.png]]
+![[wireshark-protocols-filtering.png]]
 
-![[vmi-spellbook/forensics/img/wireshark-protocol-filtering.png]]
+![[wireshark-protocol-filtering.png]]
 
 ##### conversations
 
-![[vmi-spellbook/forensics/img/wireshark-conversation-filtering.png]]
+![[wireshark-conversation-filtering.png]]
 
 Here you can filter by who's talking to who.  In the image, you can see two conversations, and you can filter based on a number of criteria - hopefully they're self explanatory.
 
@@ -96,9 +96,9 @@ Note the different protocols available:  Ethernet, IPv4, IPv6, TCP, UDP.
 
 ##### endpoints
 
-![[vmi-spellbook/forensics/img/wireshark-endpoints.png]]
+![[wireshark-endpoints.png]]
 
-![[vmi-spellbook/forensics/img/wireshark-endpoints-1.png]]
+![[wireshark-endpoints-1.png]]
 
 ### extract data from a series of packets
 
@@ -106,9 +106,9 @@ Sometimes you want to see the entire exchange between two endpoints.
 
 First, filter by protocol, then right-click on any packet and choose _Follow -> Follow \<protocol\> stream_.  In the image below, we're following the TCP stream for the REST protocol, which is associated with Redis.
 
-![[vmi-spellbook/forensics/img/wireshark-follow-stream-redis.png]]
+![[wireshark-follow-stream-redis.png]]
 
-![[vmi-spellbook/forensics/img/wireshark-streams.png]]
+![[wireshark-streams.png]]
 
 
 ## Zeek
